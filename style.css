@@ -1,0 +1,560 @@
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+
+}
+
+.header{
+
+    min-height: 100vh;
+    width:100%;
+    background-image: url("images/nature_small.jpg");
+    /* background-image: linear-gradient(rgba(0,0,0),rgba(0,0,0,0)),url(images/nature.jpg); */
+    background-size: cover;
+    background-position:bottom;
+    
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 7%;
+
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    /* transition: background-color 0.5s ease; */
+}
+
+
+nav.scrolled{
+    background-color:#ff5361;
+    transition: all 0.6s;
+}
+.logo{
+    width: 6vw;
+    cursor: pointer;
+    border-radius: 50%; 
+    margin-top: 10px;
+}
+
+
+
+.nav-list li{
+    list-style: none;
+    display:inline-block;
+    margin: 10px 20px;  
+}
+.nav-list li a{
+    color: #6f2525;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.register-btn{
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size:1.1em;
+}
+
+.header h1{
+    font-size: 6vw;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    padding-top: 20%;
+}
+
+.contain{
+    padding: 0 7%;
+}
+.contain label{
+    color: #000;
+    font-size: 1.3rem;
+}
+
+.search-box{
+    background-color: #fff;
+    width: 60%;
+    margin: 30px auto;
+    padding: 5px 10px 6px 30px;
+    border-radius: 50px;
+}
+.search-box form{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.search-box form input{
+    display: block;
+    outline: none;
+    border: 0;
+    background: transparent;    
+}
+
+.search-box form button{
+    background: #ff5361;
+    outline: none;
+    border: 0;
+    width: 4vw;
+    height: 8vh;
+    border-radius: 50%;
+}
+
+
+.search-box form img{
+    width: 2vw;
+    margin-top: 8px;
+    padding-left:4px ;
+    
+}
+
+.location {
+  flex: 1;
+}
+
+.search-box form label{
+    font-weight: 600;
+}
+
+/*         Exclusives       */
+
+.sub-title{
+    font-size: 2.3vw;
+    margin: 40px 0 20px;
+    color: #333;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.exclusive{
+    display: flex;
+    flex-wrap: wrap;
+    gap:25px;
+}
+.exclusive img{
+    width: 15.5vw;
+    border-radius: 10px;
+}
+
+.exclusive div{
+    position: relative;
+}
+
+.exclusive div span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+}
+
+/*    ............Trending.............     */
+
+.trending{
+    display: flex;
+    gap: 15px;
+}
+.trending img{
+    height: 44vh;
+    border-radius: 15px;
+}
+.trending h4{
+    font-weight: 600;
+    margin-top: 8px;
+    text-align: center;
+    font-size: 1.3rem;
+    
+}
+
+/*  Sharing*/
+
+.sharing{
+    margin: 50px 0;
+    background-image: linear-gradient(to right,#3f2131,transparent),url(images/banner-2.png);
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 3%;
+    border-radius: 15px;
+}
+.sharing h3{
+    font-size: 3.5rem;  
+    line-height: 5vw; 
+}
+.sharing p{
+margin-bottom: 15px;
+}
+.sharing a{
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #ff5361;
+    border-radius: 14px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #fff;
+    
+}
+
+.sharing a:hover{
+    text-decoration: underline;
+
+}
+
+/* ..........stories of travellers */
+
+.stories{
+    display: flex;
+    column-gap: 20px;
+}
+
+.stories img{
+    height: 60vh;
+    border-radius: 15px;
+}
+.stories div{
+    position: relative;
+}
+.stories div p{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 26px;
+
+}
+.posting-btn{
+    display: block;
+    background-color: #ff5361;
+    color: #fff;
+    text-transform: capitalize;
+    max-width: 350px;
+    padding: 15px;
+    border-radius: 30px;
+    margin: 25px auto;
+    text-align: center;
+    text-decoration: none;
+    width: 18vw;
+    font-size: 1.2rem;
+}
+
+
+/* ............about........ */
+
+.about{
+    text-align: center;
+    color: #333;
+    font-size: 1rem;
+}
+.about h2{
+    font-size: 2rem;
+    margin-bottom: 20px 0;
+    font-weight: 520;
+    text-transform: capitalize;
+}
+.about p{
+    margin-bottom: 30px;
+}
+
+/* .........footer...... */
+
+.footer{
+    margin: 10px 0 10px;
+    text-align: center;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #999;
+    font-size: 2rem;
+    margin: 0 10px;
+}
+
+.footer hr{
+    background-color: #999;
+    height: 1px;
+    width: 100%;
+    border: 0;
+    margin: 20px 0;
+}
+
+.active{
+    position: relative;
+}
+.active::after{
+    content: '';
+    background: #fff;
+    width: 50px;
+    height: 2px;
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -12px;
+}
+
+nav .fa-bars{
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* .............for small device..... */
+
+@media only screen and (max-width:700px) {
+    
+
+
+.logo{
+    position: fixed;
+    top: 10px;
+    left: 3%;
+    opacity: 1;
+    width:70px;
+    
+}
+ nav{
+    width:100%;
+    position: fixed;
+    z-index: 100;
+    display: inline-block;
+    top: 0;
+    background-color:transparent;
+    transition: background-color 0.6s ease;
+    padding:90px 40px 0;
+    text-align:right;
+    overflow: hidden;
+    max-height: 100px;
+    transition:  max-height 0.6s;
+    
+}
+
+nav.scrolled{
+    background-color:#ff5361;
+    transition: all 0.6s;
+}
+
+
+nav .nav-list li{
+    margin:12px  0;
+    display: block;
+    
+}
+nav .nav-list li a{
+font-size: 1.2rem;
+margin-right: 15px;
+    
+}
+
+nav .fa-bars{
+    display: block;
+    color: #fff;
+    position: fixed;
+    top: 40px;
+    right: 7%;
+    font-size: 28px;
+
+} 
+/* 
+nav {
+    padding: 30px 7%;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+nav.scrolled {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+nav.scrolled .nav-list li a {
+    color: #fff;
+}
+
+nav.hidemenu.scrolled {
+    background-color: rgba(0, 0, 0, 0.9);
+    max-height: 400px;
+}
+
+nav.scrolled .fa-bars {
+    color: #fff;
+}
+} */
+
+
+.nav-list{
+   width: 45%;
+   background-color: #999;
+   position: relative;
+   top: 70%;
+   left: 65%;
+   border-radius: 15px;
+   
+}
+
+.register-btn{
+    
+    display: inline-block;
+    font-size: 12px;
+    position: relative;
+    left:25px;
+    font-weight: 600;
+}
+
+
+
+.hidemenu{
+    max-height: 350px;
+}
+
+.header h1{
+    padding-top: 130px;
+    font-size: 7vw;
+}
+
+.search-box{
+    width: 80%;
+    padding:10px;
+    border-radius: 20px;
+    background:#ddd;
+    
+
+}
+.search-box form{
+    display: block;
+   padding: 10px 15px;
+}
+.search-box form button{
+   height: 50px;
+   width: 50px;  
+   position: absolute;
+   right: 45%;
+   
+}
+.search-box button img{
+    width: 20px;
+}
+.search-box form input{
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+   
+}
+
+.sub-title{
+    font-size: 5vh;
+}
+
+.exclusive img{
+    width: 97%;
+}
+
+.trending{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.trending img{
+height: 47vh;
+   
+}
+.sharing{
+    padding: 20px;
+    height: 30vh;
+}
+.sharing h3{
+    font-size: 4vh;
+    line-height: 9vw;
+    margin-bottom: 15px;
+}
+.sharing p{
+    font-size: 14px;
+}
+
+.sharing a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #ff5361;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: #fff;
+    
+}
+
+.stories {
+    display: flex;
+    flex-wrap: wrap;
+}
+.stories img{
+    height: 47vh;
+}
+
+.stories div p{
+    font-size: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%,-60%);
+}
+
+.posting-btn{
+    width: 60%;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.about p{
+    font-size: 15px;
+}
+
+.footer p{
+    font-size: 14px;
+}
+
+
+} 
+
+/* 2nd page  */
+
+.navbarclass{
+   box-shadow: 0 6px 12px rgba(0, 0,0,0.6);
+}
+
+.navbarclass .nav-list li a{
+    color: #000;
+}
+
+.navbarclass .register-btn{
+    background-color: #ff5361;
+    color: #fff;
+}
+
+.navbarclass #menubar{
+    color: #000;
+}
+
+.navbarclass .active::after{
+    background: #ff5361;
+}
